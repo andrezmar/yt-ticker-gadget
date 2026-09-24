@@ -1,0 +1,8 @@
+node_modules/
+dist/
+build/
+*.zip
+transcript-cache/
+.DS_Store
+Thumbs.db
+*.log

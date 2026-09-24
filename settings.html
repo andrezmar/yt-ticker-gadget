@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Configuración — YouTube Ticker</title>
+<style>
+  *{box-sizing:border-box}
+  body{font-family:'Segoe UI',Arial,sans-serif;margin:0;padding:20px;background:#f5f5f5;color:#222}
+  h2{margin:0 0 12px;font-size:18px}
+  .group{background:#fff;border-radius:10px;padding:14px 16px;margin-bottom:14px;box-shadow:0 1px 4px rgba(0,0,0,0.08)}
+  .group h3{margin:0 0 8px;font-size:13px;letter-spacing:0.5px;text-transform:uppercase;color:#666}
+  .opts{display:flex;gap:8px;flex-wrap:wrap}
+  .opt{flex:1;min-width:70px;padding:8px 6px;border:2px solid #e0e0e0;border-radius:8px;text-align:center;cursor:pointer;font-size:13px;background:#fafafa;transition:all 150ms}
+  .opt.active{border-color:#1976d2;background:#e3f2fd;color:#0d47a1;font-weight:600}
+  .opt small{display:block;font-size:10px;color:#888;margin-top:2px}
+  .tip{font-size:11px;color:#888;margin-top:6px}
+  .row{display:flex;gap:10px}
+  .col{flex:1}
+  #preview{margin-top:10px;padding:14px;background:#111;border-radius:8px;min-height:56px;display:flex;align-items:center}
+  #preview-text{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  kbd{background:#eee;border:1px solid #ccc;border-bottom-width:2px;border-radius:4px;padding:1px 6px;font-size:11px;font-family:monospace}
+  .shortcuts{font-size:12px;line-height:1.8;color:#444}
+</style>
+</head>
+<body>
+  <h2>⚙️ Configuración YouTube Ticker</h2>
+
+  <div class="group">
+    <h3>1. Tamaño de fuente</h3>
+    <div class="opts" id="opt-fontSize"></div>
+  </div>
+
+  <div class="group">
+    <h3>2. Color de fuente</h3>
+    <div class="opts" id="opt-fontColor"></div>
+  </div>
+
+  <div class="group">
+    <h3>3. Tipografía</h3>
+    <div class="opts" id="opt-fontFamily"></div>
+  </div>
+
+  <div class="group">
+    <h3>4. Opacidad de fondo (autorizado #1)</h3>
+    <div class="opts" id="opt-bgOpacity"></div>
+    <div class="tip">0% = transparente, 80% = casi negro</div>
+  </div>
+
+  <div class="group">
+    <h3>5. Ancho gadget (autorizado #7)</h3>
+    <div class="opts" id="opt-widthPct"></div>
+  </div>
+
+  <div class="group">
+    <h3>Vista previa</h3>
+    <div id="preview"><span id="preview-text">♪ When I look into your eyes ♪</span></div>
+  </div>
+
+  <div class="group shortcuts">
+    <h3>Atajos globales</h3>
+    <div><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Q</kbd> Mostrar ticker &nbsp; <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>W</kbd> Ocultar &nbsp; <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>R</kbd> Mover 6s</div>
+    <div style="margin-top:6px">Bandeja del sistema (tray) → clic derecho para Configuración / Salir</div>
+  </div>
+
+<script src="settings.js"></script>
+</body>
+</html>

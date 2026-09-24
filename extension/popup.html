@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+body{width:320px;font-family:system-ui;padding:12px;margin:0}
+h3{margin:0 0 8px;font-size:15px}
+#status{padding:8px;border-radius:6px;margin:8px 0;font-size:13px}
+.ok{background:#d4edda;color:#155724}
+.err{background:#f8d7da;color:#721c24}
+code{background:#f0f0f0;padding:2px 4px;border-radius:3px;font-size:12px}
+button{width:100%;padding:8px;margin-top:8px;cursor:pointer}
+small{color:#666}
+</style>
+</head>
+<body>
+<h3>YouTube Ticker</h3>
+<div id="status">Verificando...</div>
+<div style="font-size:12px;line-height:1.5">
+<p><b>1.</b> Electron debe estar corriendo: <code>npm start</code><br><small>Debe verse una barra negra abajo con texto</small></p>
+<p><b>2.</b> Health: <a href="http://127.0.0.1:8765/health" target="_blank">http://127.0.0.1:8765/health</a></p>
+<p><b>3.</b> Prueba con video CON transcripción:</p>
+<code style="word-break:break-all">https://www.youtube.com/watch?v=dQw4w9WgXcQ</code>
+<p><small>November Rain (8SbUC-UaAxE) tiene transcripción DESACTIVADA por YouTube — no funciona en ningún video así.</small></p>
+</div>
+<button id="check">Re-verificar conexión</button>
+<button id="openHealth">Abrir health</button>
+<script src="popup.js"></script>
+</body>
+</html>

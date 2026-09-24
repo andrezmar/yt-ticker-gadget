@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Ticker Connector",
+  "version": "1.0.1",
+  "description": "Detecta reproducción en YouTube y envía subtítulos al gadget overlay (YouTube Premium)",
+  "permissions": ["tabs", "offscreen"],
+  "host_permissions": ["*://*.youtube.com/*", "*://*.music.youtube.com/*", "http://127.0.0.1/*", "ws://127.0.0.1/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*", "*://*.music.youtube.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle",
+      "all_frames": false
+    }
+  ],
+  "action": {
+    "default_title": "YouTube Ticker",
+    "default_popup": "popup.html"
+  }
+}
