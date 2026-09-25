@@ -89,7 +89,7 @@ MIT — ver `LICENSE`. Puedes usar, modificar y distribuir libremente con atribu
 
 ## 🤝 Contribuir
 
-Ver `CONTRIBUTING.md`. PRs vía fork, `SECURITY.md` para reportes privados a `andrezmar@gmail.com`.
+Ver `CONTRIBUTING.md`. PRs vía fork, `SECURITY.md`.
 
 ## 🔒 Seguridad
 
